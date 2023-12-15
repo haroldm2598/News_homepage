@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+$primary--100: hsl(35, 77%, 62%);
+$primary--200: hsl(5, 85%, 63%);
+
+$neutral--100: hsl(36, 100%, 99%);
+$neutral--200: hsl(233, 8%, 79%);
+$neutral--300: hsl(236, 13%, 42%);
+$neutral--400: hsl(240, 100%, 5%);
+
+$Inter: 'Inter', sans-serif;
+// weight 400 700 800
+
+.app {
+	background-color: $neutral--100;
+	font-family: $Inter;
+}
+
+.navbarItem {
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		color: $primary--200;
+	}
+}
+
+.main {
+	&__title {
+		color: $neutral--400;
+		font-weight: 800;
+	}
+
+	&__cta {
+		&--btn {
+			background-color: $primary--200;
+		}
+	}
+}
+
+.sidebar {
+	background-color: $neutral--400;
+
+	&__title {
+		color: $primary--100;
+		font-weight: 700;
+	}
+}
